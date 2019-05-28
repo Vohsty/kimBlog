@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="jumbotron" style="background-image: url(https://www.setaswall.com/wp-content/uploads/2017/07/Blue-Wallpaper-55-4000x3000.jpg); 
+                                      background-repeat: no-repeat;
+                                      background-size: cover">
+      <div class="text-white text-center py-5 px-4 my-5">
+        <div>
+          <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Welcome to Pitch </strong></h2>
+          <p class="mx-5 mb-5">Where your creativity is boundless! Please feel free to explore the pitches in the categories provided below and add your own ideas to the vibrant community.
+          </p>
+          <hr>
+          <a class="btn btn-outline-white btn-md" href="/pickup"><i class="fas fa-clone left"></i> <h4>Pick up lines</h4></a>
+          <a class="btn btn-outline-white btn-md" href="/entertainment"><i class="fas fa-clone left"></i> <h4>Entertainment</h4></a>
+          <a class="btn btn-outline-white btn-md" href="/motivational"><i class="fas fa-clone left"></i> <h4>Motivational</h4></a>
+          <a class="btn btn-outline-white btn-md" href="/pitch/new"><i class="fas fa-clone left"></i><h4>New pitch</h4></a>
+        </div>
+      </div>
+    </div>
+    <!-- Card Dark -->
+<div class="card">
+        
+        <div class="view overlay">
+                
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+      </div>
+      <!-- Card Dark -->
+ 
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue-gradient pt-4" >
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row" style="padding-top: 30px;padding-bottom: 30px;">
+
+      <div class="col-md-4 mb-md-0 mb-3">
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mb-md-0 mb-3 text-center" style="text-align: center">
+
+       <!-- Facebook -->
+       <a class="fb-ic">
+        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+      </a>
+      <!-- Twitter -->
+      <a class="tw-ic">
+        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+      </a>
+      <!-- Google +-->
+      <a class="gplus-ic">
+        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+      </a>
+      <!--Linkedin -->
+      <a class="li-ic">
+        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+      </a>
+      <!--Instagram-->
+      <a class="ins-ic">
+        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+      </a>
+      <!--Pinterest-->
+      <a class="pin-ic">
+        <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+      </a>
+
+      </div>
+      <div class="col-md-4 mb-md-0 mb-3">
+
+      </div>
+     
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="#"> Steve Kimanthi</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+{% endblock %}
+
