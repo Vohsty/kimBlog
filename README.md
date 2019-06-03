@@ -1,7 +1,7 @@
-#PITCH
+##KimBlog
 
 ## Description
-#### This is a web application that allows users to express themselves using a pitch. They can choose which category to write a pitch in and can view and comment on other user pitches.
+#### This is a web application that allows users to express themselves using a blog posts. They they first create an account then log in to start creating blogs..
 #### By **Steve Kimanthi**
 The user can:
 * See various blog posts
