@@ -4,11 +4,10 @@
 #### This is a web application that allows users to express themselves using a pitch. They can choose which category to write a pitch in and can view and comment on other user pitches.
 #### By **Steve Kimanthi**
 The user can:
-* See various pitches, starting with the most recent
-* Comment on pitches that they like
-* Upvote pitches
-* Downvote pitches
-* Submit new pitches
+* See various blog posts
+* View blogposts they like
+* See the latests posts
+* Subscribe to latest post service
 ## Setup/Installation Requirements
 ### Prerequisites
 * python3.6
@@ -18,8 +17,8 @@ The user can:
 ### Cloning and running
 * Clone the application using git clone(this copies the app onto your device). In terminal:
 
-          $ git clone https://github.com/Vohsty/Pitch.git
-          $ cd pitch
+          $ git clone https://github.com/Vohsty/kimBlog.git
+          $ cd blog
 
 * Creating the virtual environment
 
@@ -32,6 +31,7 @@ The user can:
           $ python3.6 -m pip install Flask
           $ python3.6 -m pip install Flask-Bootstrap
           $ python3.6 -m pip install Flask-Script
+          $ python3.6 -m pip install -r requirements.txt
 
 * Run the application:
 
@@ -49,11 +49,12 @@ The user can:
 
 | Behaviour |  Sample Input | Sample Output |
 | :---------------- | :---------------: | :------------------ |
-| View Categories | Click on category | List of categories is displayed |
-| Add new pitch | Submit New Pitch | Authentication page is displayed and users can add new pitches|
-| Add Comment | Click on Comment | Form where user can fill in is displayed after login|
-| Upvote pitch | Click on Upvote| Current pitch get +1 upvote|
-| Downvote pitch | Click on Downvote | Current pitch gets +1 downvote|
+| Display latest blogs | On page load | List of various blogs I have written |
+| Registration | Submit regitration form | User creates an account and receives welcome email |
+| Subscription | Submit subscription form| User receives email eb=very time there is a new post|
+| Edit posts(writer) | Submit edit post | The post is updated with new data from user |
+| Delete posts(writer) | Click delete post | Post is deleted |
+| Delete comments(writer) | Click delete comment | Comment is deleted |
 
 ## Support and contact details
 For any questions, troubleshooting or contributions,  find me on:
