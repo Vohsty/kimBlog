@@ -17,7 +17,7 @@ def login():
 
         flash('Invalid username or Password')
 
-    title = "Pitch Login"
+    title = " Login"
     return render_template('auth/login.html',login_form = login_form,title=title)
 
 @auth.route('/logout')
@@ -35,7 +35,7 @@ def register():
         db.session.add(user)
         db.session.commit()
 
-        mail_message("Welcome ","email/welcome_user",user.email,user=user)
+        mail_message("Welcome to IJBlog","email/welcome_user",user.email,user=user)
 
         return redirect(url_for('auth.login'))
         title = "New Account"

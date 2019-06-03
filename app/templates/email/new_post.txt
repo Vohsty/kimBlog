@@ -1,0 +1,2 @@
+Hello {{user.username}}
+There's a new post ready to be viewwed on IJBLog. Go check it out, like and comment. Life is good YOLO.

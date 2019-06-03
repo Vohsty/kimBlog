@@ -3,14 +3,13 @@
 
 {% block content %}
 <p>Hi</p>
-    {% for pitch in pitches %}
-        <p>{{pitch.title}}</p>
-        <p>{{pitch.description}}</p>
-        <p>{{pitch.posted_p}}</p>
-        <p>Posted by {{pitch.user.username}}</p>
-        <a href="{{url_for('main.upvote',pitch_id = pitch.id)}}"><i class="fas fa-heart"></i>Upvote<span>{{pitch.upvotes.count()}}</span></a>
-                <a href="{{url_for('main.downvote',pitch_id = pitch.id)}}"><i class="fal fa-heartbeat"></i>Downvote<span>{{pitch.downvotes.count()}}</span></a>
-                <div class="panel-footer"><a href="{{url_for('main.new_comment',pitch_id = pitch.id)}}"> Add a comment</a>
+    {% for post in posts %}
+        <p>{{post.title}}</p>
+        <p>{{post.description}}</p>
+        <p>{{post.posted_p}}</p>
+        <p>Posted by {{post.user.username}}</p>
+        <a href="{{url_for('main.star',post_id = post.id)}}"><i class="fas fa-heart"></i>Star<span>{{post.stars.count()}}</span></a>
+                <div class="panel-footer"><a href="{{url_for('main.new_comment',post_id = post.id)}}"> Add a comment</a>
                 
     {% endfor %}
 

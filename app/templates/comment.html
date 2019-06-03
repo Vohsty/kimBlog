@@ -6,20 +6,27 @@
     {{wtf.quick_form(form)}}
 
 		<div>
-			<h3>Comments for {{pitch.title}}</h3>
+			<h3>Comments for {{post.title}}</h3>
 		</div>
 	{% if comments %}
 	<div class="row text-center">
 			{% for comment in comments %}
 				<div class="col-md-4">
+<!-- Card -->
+<div class="card card-image" style="background-image: url();">
 
-<div class="card">
-		<div class="card-body">
-		  <h4 class="card-title"><a style="color: brown">{{ comment.comment}}</a></h4>
-		  <p class="text-right">Posted by: {{comment.user.username}}</p>
-		</div>
-	  
-	  </div>
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h3 class="card-title pt-2"><strong>{{ comment.comment}}</strong></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+        optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+        Odit sed qui, dolorum!.</p>
+				<h5 class="pink-text">By: {{comment.user.username}}</h5>
+    </div>
+  </div>
+
+</div>
 		<hr>
 					</div>
 			{% endfor %}
